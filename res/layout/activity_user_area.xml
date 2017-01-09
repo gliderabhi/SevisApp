@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/userRelative"
+    tools:context="com.example.munna.shopkeeperapp.UserAreaActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/d1"
+        android:layout_height="70dp"
+        android:id="@+id/uwelcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select your Vehicle Services"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:id="@+id/uselectText"
+        android:gravity="center"
+        android:layout_below="@+id/uwelcome"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView3"
+        android:onClick="GetServices"
+        android:src="@drawable/twowheel"
+
+        android:layout_below="@+id/uselectText"
+        android:layout_alignLeft="@+id/uselectText"
+        android:layout_alignStart="@+id/uselectText" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView4"
+        android:onClick="GetServices"
+        android:src="@drawable/petrolfour"
+        android:layout_below="@+id/uselectText"
+        android:layout_alignRight="@+id/uselectText"
+        android:layout_alignEnd="@+id/uselectText" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView5"
+        android:onClick="GetServices"
+        android:src="@drawable/diesel"
+        android:layout_below="@+id/twowheel"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView6"
+        android:onClick="GetServices"
+        android:src="@drawable/fourwheel"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:text="@string/two_wheeler"
+        android:id="@+id/twowheel"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:text="4 Wheeler Petrol"
+        android:id="@+id/petro4"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:text="Diesel 4 Wheeler"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:text="Diesel Heavy 4 \n Wheeler"
+        android:gravity="center"
+        android:id="@+id/heavyfour"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Available Now"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:id="@+id/btnFinal"
+        android:onClick="changepage"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/heavyfour"
+        android:layout_alignEnd="@+id/heavyfour" />
+
+
+</RelativeLayout>

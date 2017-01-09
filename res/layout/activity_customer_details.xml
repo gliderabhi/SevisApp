@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.munna.shopkeeperapp.CustomerDetails">
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/WelcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:text="THE DETAILS OF THE CUSTOMER IS BELOW.
+            \n Accept the request of customer. We will notify him/her "/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/WelcomeMessage"
+        android:id="@+id/unameHintText"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unameText"
+        android:text=""
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/unameHintText"
+        android:layout_below="@+id/WelcomeMessage"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:id="@+id/umailHintText"
+        android:layout_below="@+id/unameText"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/umailText"
+        android:text=""
+        android:padding="10dp"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/umailHintText"
+        android:layout_below="@+id/unameText"
+        android:paddingLeft="10dp"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/notifyAccept"
+    android:text="Accept/Reject request"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="80dp"
+    android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/rejectImg"
+        android:src="@drawable/download"
+        android:onClick="delete"
+        android:layout_toRightOf="@+id/notifyAccept"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="20dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/correct"
+        android:id="@+id/acceptImg"
+        android:onClick="sendAccept"
+        android:layout_toRightOf="@+id/notifyAccept"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="80dp"
+        />
+</RelativeLayout>
